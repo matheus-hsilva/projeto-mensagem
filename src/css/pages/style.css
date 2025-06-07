@@ -377,10 +377,10 @@
   .flower-red-1{
     display: block;
     position: absolute;
-    top: -40px;
-    left: -45px;
-    width: 25%;
-    transform: rotate(75deg);
+    top: -45px;
+    left: -48px;
+    width: 27%;
+    transform: rotate(80deg);
   }
   
   .flower-red-2{
