@@ -1,0 +1,434 @@
+.contanier-church{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-hero{
+  height: 350px;
+}
+
+.section-faith{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 600px;
+  padding: 0 10%;
+}
+
+.faith-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 45%;
+  height: 100%;
+}
+
+.faith-image .blob-faith-1{
+  position: absolute;
+  width: 65%;
+  z-index: 3;
+}
+
+
+.faith-image .blob-faith-2{
+  position: absolute;
+  top: 170px;
+  left: 120px;
+  width: 60%;
+  z-index: 2;
+  transform: rotate(90deg);
+}
+
+.faith-image .blob-faith-3{
+  position: absolute;
+  right: 70px;
+  bottom: 70px;
+  width: 55%;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.faith-image-mb{
+  display: none;
+}
+
+.faith-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: 55%;
+  height: 70%;
+}
+
+.content-title{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+
+.content-title h1{
+  max-width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #121212;
+}
+
+.content-subtitle{
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #FF0050;
+}
+
+.content-description{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #121212;
+}
+
+.flower-red-1, .flower-red-2{
+  display: none;
+}
+
+.section-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #121212;
+  padding: 0 10%;
+}
+
+.cards-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 150px;
+  gap: 30px;
+  width: 60%;
+}
+
+.card-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  perspective: 1000px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-item:hover .card-flip{
+  transform: rotateY(180deg);
+}
+
+.card-flip{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition-duration: .5s;
+}
+
+.flip-front, .flip-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-front{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 0 10%;
+}
+
+.flip-front i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FF0050;
+}
+
+.flip-front p{
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #121212;
+}
+
+.flip-back{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  transform: rotateY(180deg);
+  padding: 0 10%;
+}
+
+.flip-back p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #121212;
+}
+
+.image-blob-1{
+  position: absolute;
+  width: 13%;
+  top: -2px;
+  right: -2px;
+}
+
+.section-spotify{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 250px;
+  padding: 0 10%;
+}
+
+.spotify-player{
+  width: 60%;
+  height: 80px;
+}
+
+.spotify-title{
+  max-width: 60%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+  color: #121212;
+}
+
+.spotify-title span{
+  color: #FF0050;
+}
+
+@media screen and (max-width: 1170px){
+  .section-hero{
+    height: 250px;
+  }
+  
+  .section-faith{
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    padding: 0 5%;
+  }
+  
+  .faith-image{
+    display: none;
+  }
+  
+  .faith-image-mb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: 40%;
+  }
+  
+  .blob-faith-1-mb{
+    position: absolute;
+    width: 80%;
+    z-index: 3;
+  }
+  
+  .blob-faith-2-mb{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 74%;
+    z-index: 1;
+  }
+
+  .faith-content{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40%;
+  }
+  
+  .content-title{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-title h1{
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  
+  .content-title .pre-title{
+    display: none;
+  }
+  
+  .content-subtitle{
+    font-size: 1rem;
+  }
+  
+  .content-description{
+    text-align: justify;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  
+  .flower-red-1{
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: -52px;
+    width: 26%;
+    transform: rotate(250deg);
+  }
+  
+  .flower-red-2{
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: -28px;
+    width: 23%;
+    transform: rotate(10deg);
+    z-index: 1;
+  }
+  
+  .section-cards{
+    padding: 0 7%;
+  }
+  
+  .section-cards::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px; 
+    background-color: #121212;
+    z-index: 2;
+  }
+  
+  .cards-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .flip-front{
+    padding: 0 7%;
+  }
+  
+  .flip-front i{
+    font-size: 1.2rem;
+  }
+  
+  .flip-front p{
+    width: 90%;
+    font-size: 1rem;
+  }
+  
+  .flip-back{
+    padding: 0 7%;
+  }
+  
+  .flip-back p{
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  
+  .image-blob-1{
+    display: none;
+  }
+ 
+  .section-spotify{
+    padding: 0 7%;
+  }
+  
+  .spotify-player{
+    width: 100%;
+  }
+  
+  .spotify-title{
+    max-width: 90%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1170px){
+  .faith-image-mb{
+    width: 50%;
+    height: 35%;
+  }
+  
+  .blob-faith-2-mb{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 63%;
+    z-index: 1;
+  }
+  
+    .flower-red-1{
+    display: block;
+    position: absolute;
+    top: -45px;
+    right: -87px;
+    width: 22%;
+    transform: rotate(250deg);
+  }
+  
+  .flower-red-2{
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: -28px;
+    width: 18%;
+    transform: rotate(10deg);
+    z-index: 1;
+  }
+  
+  .cards-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 130px);
+    gap: 15px;
+    width: 80%;
+  }
+}

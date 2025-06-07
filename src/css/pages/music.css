@@ -1,0 +1,41 @@
+.contanier-music{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-hero{
+  height: 350px;
+}
+
+.flower-red-1{
+  display: none;
+}
+
+@media screen and (max-width: 1170px){
+  .section-hero{
+   height: 250px;
+  }
+  
+  .flower-red-1{
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: -77px;
+    width: 28%;
+    transform: rotate(75deg);
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1170px){
+  .flower-red-1{
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: -135px;
+    width: 23%;
+    transform: rotate(75deg);
+  }
+}
